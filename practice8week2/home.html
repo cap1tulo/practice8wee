@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Dropdown removal section -->
+    <h2>Remove Items from Dropdown List</h2>
+    <select id="dropdown" class="form-control mb-3">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+    </select>
+    <button class="btn btn-danger" onclick="removeDropdownItem()">Remove Selected Item</button>
+
+    <!-- Random Image Display section -->
+    <h2 class="mt-5">Display a Random Image</h2>
+    <button class="btn btn-primary" onclick="displayRandomImage()">Show Random Image</button>
+    <div id="imageContainer" class="mt-3"></div>
+
+    <!-- Highlight Bold Text section -->
+    <h2 class="mt-5">Highlight Bold Words</h2>
+    <p>
+        This is a <b>sample</b> paragraph with some <b>bold</b> words to <b>highlight</b>.
+    </p>
+    <a href="#" onmouseover="highlightBold()" onmouseout="removeHighlight()">Hover over to highlight bold text</a>
+
+    <!-- Window Resize Info section -->
+    <h2 class="mt-5">Window Resize Information</h2>
+    <p id="windowSize"></p>
+</div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
